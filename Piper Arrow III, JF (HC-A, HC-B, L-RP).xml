@@ -1,0 +1,34 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
+  <Devices />
+  <Options>
+    <Option Key="Elgato.Streamdeck.Brightness" Value="100" ValueType="System.Integer" />
+    <Option Key="Elgato.Streamdeck.DarkenDevice" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.BIP.EnableVirtualPower" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.BIP.Brightness" Value="50" ValueType="System.Integer" />
+    <Option Key="Saitek.BIP.Priority.VALUEOFF" Value="0" ValueType="System.Integer" />
+    <Option Key="Saitek.BIP.Priority.VALUEGREEN" Value="1" ValueType="System.Integer" />
+    <Option Key="Saitek.BIP.Priority.VALUEYELLOW" Value="2" ValueType="System.Integer" />
+    <Option Key="Saitek.BIP.Priority.VALUERED" Value="4" ValueType="System.Integer" />
+    <Option Key="Saitek.BIP.Priority.VALUEREDBLINK" Value="3" ValueType="System.Integer" />
+    <Option Key="Saitek.FIP.BindLightToMode" Value="False" ValueType="System.Boolean" />
+    <Option Key="Saitek.FIP.EnableVirtualPower" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.FIP.DefaultPagingButtons" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.FIP.PagingButtonsOn" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.RadioPanel.EnableVirtualPower" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.SwitchPanel.RaiseOnFirst" Value="False" ValueType="System.Boolean" />
+    <Option Key="Saitek.SwitchPanel.SwapRL" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.SwitchPanel.EnableVirtualPower" Value="True" ValueType="System.Boolean" />
+    <Option Key="Saitek.TrimWheel.ReverseTrim" Value="True" ValueType="System.Boolean" />
+    <Option Key="Ultimarc.PacDrive.EnableVirtualPower" Value="True" ValueType="System.Boolean" />
+    <Option Key="Ultimarc.PacLed64.EnableVirtualPower" Value="True" ValueType="System.Boolean" />
+    <Option Key="Ultimarc.PacLed64.Brightness" Value="128" ValueType="System.Integer" />
+    <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
+  </Options>
+  <CustomClientEvents />
+  <ProfileInformation ProfileID="395a19ea-21c4-4832-81d5-88acfe1be8f0" Version="0.40">
+    <Author>ANCRM114</Author>
+    <Description />
+    <LastChanged>2021-11-19T13:33:31.6408216-05:00</LastChanged>
+  </ProfileInformation>
+</Profile>
