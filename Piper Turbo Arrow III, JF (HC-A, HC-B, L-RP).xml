@@ -1,8 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2" xmlns="http://www.fsgs.com/SPAD">
   <Devices>
-    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="2">
-      <DevicePage ID="0a2408f9-eea2-4f0d-a61c-d81c1339a043" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="X_AXIS">
             <EventDefinitions>
@@ -344,15 +343,13 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
       <Options>
         <Option Key="BUTTON_6.InputModifier" Value="Repeat" />
         <Option Key="BUTTON_5.InputModifier" Value="Repeat" />
         <Option Key="POV_EAST.InputModifier" Value="Toggle" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;2d7a2a0b&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="2">
-      <DevicePage ID="ec290a24-71d9-4ef5-aabf-7a14d6a3b241" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;2d7a2a0b&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_NAV2">
             <EventDefinitions>
@@ -973,10 +970,9 @@
             </Options>
           </Event>
         </Events>
-      </DevicePage>
+
     </Device>
-    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="2">
-      <DevicePage ID="f707db46-8f43-4840-9ead-325c73b05341" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="Y_AXIS">
             <EventDefinitions>
@@ -2087,10 +2083,8 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
-    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#b&amp;22906be&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="2">
-      <DevicePage ID="627838d4-f64a-4758-9c52-c9ebc3543e4f" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#b&amp;22906be&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="X_AXIS">
             <EventDefinitions>
@@ -2123,10 +2117,8 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
-    <Device VendorID="0xFFFF" ProductID="0xFFFF" DevicePath="0xFFFF_0xFFFF" DeviceIndex="0" Version="2">
-      <DevicePage ID="926f904c-009e-4adf-a81b-02296055bbf4" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0xFFFF" ProductID="0xFFFF" DevicePath="0xFFFF_0xFFFF" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="SCRIPT_1_1">
             <EventDefinitions>
@@ -2169,7 +2161,6 @@
             </Options>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
   </Devices>
   <Options>
