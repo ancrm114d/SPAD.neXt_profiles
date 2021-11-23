@@ -1,6 +1,635 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
-  <Devices />
+  <Devices>
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;1ac07966&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+      <Events>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_NAV2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:2" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_NAV1">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:1" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_XPDR">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionCommand CommandName="DIGITMARK" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:BAROMETRIC_STD_PRESSURE" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_COM1">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_COM2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_NAV2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:2" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_NAV1">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:1" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_ADF">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_DME">
+          <EventDefinitions>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DME:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DMESPEED:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" ValueType="System.Integer" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_XPDR">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionCommand CommandName="DIGITMARK" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:BAROMETRIC_STD_PRESSURE" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="CONFIGURE_PANEL_STATUS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
+              </EventConditions>
+              <EventActions>
+                <EventActionCommand CommandName="SPAD_neXt.Device_PowerON" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
+              </EventConditions>
+              <EventActions>
+                <EventActionCommand CommandName="SPAD_neXt.Device_PowerOFF" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_ADF">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" DisplayFormat="000.0" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_DME">
+          <EventDefinitions>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DME:1" TargetDisplay="LEFTDISPLAY" DisplayFormat="0.0" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DMESPEED:1" TargetDisplay="RIGHTDISPLAY" DisplayFormat="0.0" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+      </Events>
+    </Device>
+  </Devices>
   <Options>
     <Option Key="Elgato.Streamdeck.Brightness" Value="100" ValueType="System.Integer" />
     <Option Key="Elgato.Streamdeck.DarkenDevice" Value="True" ValueType="System.Boolean" />
@@ -26,8 +655,8 @@
     <Option Key="Ultimarc.PacLed64.Brightness" Value="128" ValueType="System.Integer" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="511c1cb0-ac17-446a-a401-24234044baee" Version="0.1">
+  <ProfileInformation ProfileID="511c1cb0-ac17-446a-a401-24234044baee" Version="0.2">
     <Description />
-    <LastChanged>2021-11-20T16:08:02.9294307-05:00</LastChanged>
+    <LastChanged>2021-11-23T17:24:45.3381697-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
