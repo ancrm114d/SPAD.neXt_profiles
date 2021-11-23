@@ -2040,49 +2040,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_7">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:LEFT_MISC_PRIME_ISDOWN" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_PRIME_ISDOWN" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LVAR:LEFT_MISC_PRIME_ISDOWN" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_PRIME_ISDOWN" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="2" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_38">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_39">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_43">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
@@ -2097,6 +2054,24 @@
             <EventDefinition Trigger="PRESS">
               <EventActions>
                 <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_FUEL_SEL" Value="2" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_38">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_39">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2207,9 +2182,9 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="3154201e-14c0-415a-bf60-52aef4ce7354" Version="0.25">
+  <ProfileInformation ProfileID="3154201e-14c0-415a-bf60-52aef4ce7354" Version="0.26">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2021-11-23T12:30:58.407684-05:00</LastChanged>
+    <LastChanged>2021-11-23T12:36:58.4504633-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
