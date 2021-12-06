@@ -310,13 +310,101 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="HATSWITCH_0">
+          <EventDefinitions>
+            <EventDefinition Trigger="POV_EAST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>Right</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_WEST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>Left</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_NORTHEAST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>D3</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_SOUTH_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>D5</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_NORTH_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>D7</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_NORTHWEST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>D2</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_SOUTHEAST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="__ACTIVEWINDOW__">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>D6</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
       </Events>
       <Options>
         <Option Key="BUTTON_6.InputModifier" Value="Repeat" />
         <Option Key="BUTTON_5.InputModifier" Value="Repeat" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;3507fc21&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;1ac07966&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
           <EventDefinitions>
@@ -1458,7 +1546,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="6.16963303764435" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="333.224792488112" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -1541,7 +1629,7 @@
         <Option Key="BUTTON_34.InputModifier" Value="Pulse" />
       </Options>
     </Device>
-    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#9&amp;3297f236&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#b&amp;22906be&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -1601,8 +1689,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="cb80afac-eda3-492e-b455-5e35e0976ed8" Version="0.7">
+  <ProfileInformation ProfileID="cb80afac-eda3-492e-b455-5e35e0976ed8" Version="0.16">
     <Description />
-    <LastChanged>2021-09-25T18:21:32.1926466-04:00</LastChanged>
+    <LastChanged>2021-11-26T14:48:37.2833554-05:00</LastChanged>
   </ProfileInformation>
 </Profile>

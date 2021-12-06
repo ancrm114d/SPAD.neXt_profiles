@@ -977,7 +977,27 @@
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
           </Options>
         </Event>
-      </Events>
+        <Event BoundTo="CONFIGURE_PANEL_STATUS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
+              </EventConditions>
+              <EventActions>
+                <EventActionCommand CommandName="SPAD_neXt.Device_PowerON" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
+              </EventConditions>
+              <EventActions>
+                <EventActionCommand CommandName="SPAD_neXt.Device_PowerOFF" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+	  </Events>
     </Device>
     <Device VendorID="0x068E" ProductID="0xC0F2" DevicePath="\\?\hid#vid_068e&amp;pid_c0f2#3&amp;2ec7a227&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="Control Manager ID _00" DeviceIndex="0" Version="1">
       <Events>
