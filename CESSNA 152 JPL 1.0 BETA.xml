@@ -997,7 +997,7 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-	  </Events>
+      </Events>
     </Device>
     <Device VendorID="0x068E" ProductID="0xC0F2" DevicePath="\\?\hid#vid_068e&amp;pid_c0f2#3&amp;2ec7a227&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="Control Manager ID _00" DeviceIndex="0" Version="1">
       <Events>
@@ -1253,7 +1253,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="143.178077393166" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -1376,24 +1376,6 @@
             <EventDefinition Trigger="PRESS">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_44">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:CABIN_LIGHTS_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_45">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:CABIN_LIGHTS_OFF" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2044,6 +2026,26 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="BUTTON_44">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:CABIN_LIGHTS_ON" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PANEL_LIGHTS_ON" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_45">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:CABIN_LIGHTS_OFF" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PANEL_LIGHTS_OFF" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
       </Events>
       <Options>
         <Option Key="BUTTON_31.InputModifier" Value="Pulse" />
@@ -2176,8 +2178,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.55">
+  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.56">
     <Description />
-    <LastChanged>2021-11-22T18:29:19.6649026-05:00</LastChanged>
+    <LastChanged>2021-12-22T18:02:41.8807631-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
