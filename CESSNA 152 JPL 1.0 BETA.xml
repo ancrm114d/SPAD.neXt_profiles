@@ -1253,7 +1253,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="143.178077393166" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="143.17807742321" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -2150,6 +2150,21 @@
             <Option Key="NAME" Value="NO NAME" />
           </Options>
         </Event>
+        <Event BoundTo="SCRIPT_1_2">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LVAR:XMLVAR_AUDIO_SPKR_SEL" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:XMLVAR_AUDIO_SPKR_SEL" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="NAME" Value="NO NAME" />
+          </Options>
+        </Event>
       </Events>
     </Device>
   </Devices>
@@ -2178,8 +2193,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.56">
+  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.57">
     <Description />
-    <LastChanged>2021-12-22T18:02:41.8807631-05:00</LastChanged>
+    <LastChanged>2021-12-22T18:14:29.6790176-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
