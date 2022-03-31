@@ -283,15 +283,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_15">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_16">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
@@ -299,14 +290,27 @@
                 <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_LEFT" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_RIGHT" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="MSFS:BUS CONNECTION ON:6" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_13">
+        <Event BoundTo="BUTTON_15">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="1" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="MSFS:BUS CONNECTION ON:6" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -315,8 +319,33 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:1" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:2" Value="0" ValueOperation="Set" />
                 <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="0" ValueOperation="Set" />
                 <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_LEFT" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_RIGHT" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_13">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:1" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:2" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -569,7 +598,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG" IsFinal="true">
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="98.8118412862626" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2110,8 +2139,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.8">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.13">
     <Description />
-    <LastChanged>2022-03-30T17:56:44.0942171-04:00</LastChanged>
+    <LastChanged>2022-03-31T12:34:56.7495221-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
