@@ -1,11 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" Version="2" xmlns="http://www.fsgs.com/SPAD">
+<Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
   <Variables>
     <Variable Name="LOCAL:RP_BOT_DISP_XPDR_MISC" Value="0" ValueType="Double" />
   </Variables>
   <Devices>
-    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="2">
-      <DevicePage ID="3f19c7a1-14a5-4442-8a8c-23e38ee93673" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="X_AXIS">
             <EventDefinitions>
@@ -323,14 +322,12 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
       <Options>
         <Option Key="BUTTON_6.InputModifier" Value="Repeat" />
         <Option Key="BUTTON_5.InputModifier" Value="Repeat" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;1ac07966&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="2">
-      <DevicePage ID="e7147f83-8682-4df5-be08-493cce557a05" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;1ac07966&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_NAV2">
             <EventDefinitions>
@@ -959,10 +956,8 @@
             </Options>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
-    <Device VendorID="0x068E" ProductID="0xC0F2" DevicePath="\\?\hid#vid_068e&amp;pid_c0f2#3&amp;2ec7a227&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="Control Manager ID _00" DeviceIndex="0" Version="2">
-      <DevicePage ID="5a4dea4f-28b7-49a5-a576-4ec5e59099fc" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x068E" ProductID="0xC0F2" DevicePath="\\?\hid#vid_068e&amp;pid_c0f2#3&amp;2ec7a227&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="Control Manager ID _00" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="Y_AXIS">
             <EventDefinitions>
@@ -995,10 +990,8 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
-    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="2">
-      <DevicePage ID="6033283f-705f-4ec4-befd-d3ae27340186" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="Y_AXIS">
             <EventDefinitions>
@@ -1982,10 +1975,8 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
-    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#b&amp;22906be&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="2">
-      <DevicePage ID="97d29eba-7ff2-4658-a117-edcfc3555543" IsDefaultPage="true" Name="__Default">
+    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#b&amp;22906be&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
         <Events>
           <Event BoundTo="Y_AXIS">
             <EventDefinitions>
@@ -2018,7 +2009,6 @@
             </EventDefinitions>
           </Event>
         </Events>
-      </DevicePage>
     </Device>
   </Devices>
   <Options>

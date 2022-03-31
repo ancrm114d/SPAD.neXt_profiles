@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
   <Devices>
-    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#9&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -32,44 +32,6 @@
                     <Option Key="INVERTAXIS" Value="False" />
                   </Options>
                 </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_20">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_OFF" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDEROFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_17">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_18">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_19">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_ON" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -248,6 +210,34 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="HATSWITCH_0">
+          <EventDefinitions>
+            <EventDefinition Trigger="POV_EAST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>Right</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="POV_WEST_PRESS">
+              <EventActions>
+                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
+                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
+                    <Keys>
+                      <Keys>LControlKey</Keys>
+                      <Keys>Left</Keys>
+                    </Keys>
+                  </KeyboardMacro>
+                </EventActionKeyboard>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="BUTTON_13">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -284,90 +274,30 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="HATSWITCH_0">
+        <Event BoundTo="BUTTON_17">
           <EventDefinitions>
-            <EventDefinition Trigger="POV_EAST_PRESS">
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>Right</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_WEST_PRESS">
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>Left</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_ON" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_NORTH_PRESS">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_18">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D8</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_OFF" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_SOUTH_PRESS">
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D7</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="POV_SOUTHWEST_PRESS">
-              <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D5</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="POV_SOUTHEAST_PRESS">
-              <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D4</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="POV_NORTHEAST_PRESS">
-              <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D2</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_OFF" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -412,8 +342,42 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#9&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
       <Events>
+        <Event BoundTo="Y_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION1" Value="True" />
+                    <Option Key="MAX" Value="1023" />
+                    <Option Key="IDLE" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_15">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:FLAPS_INCR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_16">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:FLAPS_DECR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="BUTTON_22">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
@@ -432,11 +396,11 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_4">
+        <Event BoundTo="BUTTON_8">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_BC_HOLD" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_MASTER" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -501,6 +465,24 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="BUTTON_39">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_38">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="BUTTON_29">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -514,136 +496,46 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_PANEL_HEADING_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_PANEL_HEADING_OFF" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="179.918446514786" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_2">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_GPS_DRIVES_NAV1" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_3">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_5">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_ALT_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+            <EventDefinition Trigger="PRESSLONG">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="278.587031378897" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_6">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_7">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FLIGHT_LEVEL_CHANGE" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_8">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_MASTER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_35">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_38">
-          <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_39">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
+            <EventDefinition Trigger="PRESS">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_DIRECTTO" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_DIRECTTO" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1285,213 +1177,228 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="X_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION1" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="RZ_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION2" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="RY_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION3" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="RX_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION4" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="Z_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_FLAPS">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="MIN" Value="1023" />
-                    <Option Key="MAX" Value="0" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="Y_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_SPOILER">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="MAX" Value="0" />
-                    <Option Key="IDLE" Value="873" />
-                    <Option Key="MIN" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_16">
+        <Event BoundTo="BUTTON_3">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FPL_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FPL_PUSH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_15">
+        <Event BoundTo="BUTTON_4">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_BC_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_PROC_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_PROC_PUSH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_9">
+        <Event BoundTo="BUTTON_5">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE1_SET" Value="4294963200" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_ALT_HOLD" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
+            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE1_CUT" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_CLR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_CLR_LONG" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_CLR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_CLR_LONG" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_10">
+        <Event BoundTo="BUTTON_6">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE2_SET" Value="4294963200" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_HOLD" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE2_CUT" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_11">
+        <Event BoundTo="BUTTON_7">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE3_SET" Value="4294963200" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:FLIGHT_LEVEL_CHANGE" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE3_CUT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_12">
-          <EventDefinitions>
             <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE4_SET" Value="4294963200" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE4_CUT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_26">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="6" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_25">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="5" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_27">
+        <Event BoundTo="BUTTON_2">
           <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="7" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_28">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
+            <EventDefinition Trigger="PRESSLONG" IsFinal="true">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="8" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GPS_VNAV_BUTTON" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_MENU_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_MENU_PUSH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1514,9 +1421,33 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="BUTTON_34">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_35">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
       </Events>
     </Device>
-    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#9&amp;3297f236&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#8&amp;100342a4&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -1550,7 +1481,7 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;f949ad7&amp;1&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;3507fc21&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
           <EventDefinitions>
@@ -1587,52 +1518,6 @@
             <EventDefinition Trigger="ACTIVATESHORT">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_SWAP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM2">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1797,308 +1682,6 @@
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
           </Options>
         </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_COM1">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_SWAP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_COM2">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_NAV2">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV2_RADIO_SWAP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATELONG">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:2" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_NAV1">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_SWAP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATELONG">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:1" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_ADF">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_DME">
-          <EventDefinitions>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DME:1" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DMESPEED:1" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" ValueType="System.Integer" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_XPDR">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionCommand CommandName="DIGITMARK" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATELONG">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:BAROMETRIC_STD_PRESSURE" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_ADF">
           <EventDefinitions>
             <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
@@ -2160,7 +1743,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="VALUE">
               <EventConditions>
-                <EventCondition ConditionComparator="Greater" ConditionTargetValue="3" ConditionValueSource="SIMCONNECT:ELECTRICAL BATTERY BUS AMPS" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
               </EventConditions>
               <EventActions>
                 <EventActionCommand CommandName="SPAD_neXt.Device_PowerON" />
@@ -2168,13 +1751,1232 @@
             </EventDefinition>
             <EventDefinition Trigger="VALUE">
               <EventConditions>
-                <EventCondition ConditionComparator="Less" ConditionTargetValue="3" ConditionValueSource="SIMCONNECT:ELECTRICAL BATTERY BUS AMPS" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
               </EventConditions>
               <EventActions>
                 <EventActionCommand CommandName="SPAD_neXt.Device_PowerOFF" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_ADF">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="0.1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" Value="10" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:ADF ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_NAV2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="0.05" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:2" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_NAV1">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="0.05" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:NAV1_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:NAV SOUND:1" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_COM2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_COM1">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:1" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:1" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM_STBY_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_DME">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DME:1" TargetDisplay="LEFTDISPLAY" DisplayFormat="0.0" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DMESPEED:1" TargetDisplay="RIGHTDISPLAY" DisplayFormat="0.0" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_XPDR">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_LOWER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATELONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_RANGE_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_RANGE_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_RANGE_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_RANGE_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:GPS WP DISTANCE" TargetDisplay="RIGHTDISPLAY" DisplayFormat="000.0" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" ValueType="System.Integer" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
         </Event>
       </Events>
     </Device>
@@ -2204,8 +3006,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="4ef74182-b08d-4398-a632-b2ec5e0eaed7" Version="0.17">
+  <ProfileInformation ProfileID="617c9200-58d6-49f2-9b9b-687fe910f496" Version="0.7">
     <Description />
-    <LastChanged>2022-01-21T16:15:01.578965-05:00</LastChanged>
+    <LastChanged>2022-03-04T17:00:59.1704947-05:00</LastChanged>
   </ProfileInformation>
 </Profile>

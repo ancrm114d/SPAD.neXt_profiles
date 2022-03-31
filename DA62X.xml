@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
   <Devices>
-    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#9&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -334,7 +334,7 @@
         <Option Key="BUTTON_5.InputModifier" Value="Repeat" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;1ac07966&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;2596831&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
           <EventDefinitions>
@@ -1589,6 +1589,52 @@
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
           </Options>
         </Event>
+        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM2">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="RIGHTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="ACTIVATESHORT">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
         <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_XPDR">
           <EventDefinitions>
             <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
@@ -1773,59 +1819,18 @@
             </EventDefinition>
             <EventDefinition Trigger="RIGHTDISPLAY">
               <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:GPS WP DISTANCE" TargetDisplay="RIGHTDISPLAY" DisplayFormat="000.0" />
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:GPS GROUND SPEED" TargetDisplay="RIGHTDISPLAY" DisplayFormat="00000" DisplayConvert="METERS PER SECOND=&gt;KNOTS" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="LEFTDISPLAY">
+              <EventActions>
+                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:GPS WP DISTANCE" TargetDisplay="LEFTDISPLAY" DisplayFormat="0000.0" DisplayConvert="mToNm" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
           <Options>
             <Option Key="TUNER_INNER_SENSITIVITY" Value="100" ValueType="System.Integer" />
             <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
-        <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM2">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="0.025" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM ACTIVE FREQUENCY:2" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:COM STANDBY FREQUENCY:2" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:COM2_RADIO_SWAP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
             <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
             <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
@@ -1867,7 +1872,7 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#9&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="Y_AXIS">
           <EventDefinitions>
@@ -2113,7 +2118,7 @@
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="201.013221223345" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="156.047148257455" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -3052,7 +3057,7 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#b&amp;22906be&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#8&amp;2a6e9373&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -3112,8 +3117,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="5128ae17-4b3f-442b-8d0b-5a38ee5b24ca" Version="0.43">
+  <ProfileInformation ProfileID="5128ae17-4b3f-442b-8d0b-5a38ee5b24ca" Version="0.45">
     <Description />
-    <LastChanged>2021-12-27T12:29:00.2234315-05:00</LastChanged>
+    <LastChanged>2022-03-22T16:50:23.4208899-04:00</LastChanged>
   </ProfileInformation>
 </Profile>

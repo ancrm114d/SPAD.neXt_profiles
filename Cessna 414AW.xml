@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
   <Devices>
-    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#9&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -194,42 +194,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_31">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_32">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_33">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="2" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_34">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="3" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_35">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -244,42 +208,6 @@
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AUTOPILOT_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_13">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_14">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_15">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_16">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_OFF" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -310,64 +238,85 @@
                 </EventActionKeyboard>
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_NORTH_PRESS">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_31">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D8</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_SET" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_OFF" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_OFF" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:MAGNETO_BAR" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_SOUTH_PRESS">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_33">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D7</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="2" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_SET" Value="2" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_SOUTHWEST_PRESS">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_34">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D5</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="3" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_SET" Value="3" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_SOUTHEAST_PRESS">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_32">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D4</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO1_SET" Value="1" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:MAGNETO2_SET" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="POV_NORTHEAST_PRESS">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_15">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionKeyboard MacroType="PRESSANDRELEASE" TargetWindow="FS98MAIN">
-                  <KeyboardMacro Duration="50" Repeat="1" Pause="25">
-                    <Keys>
-                      <Keys>LControlKey</Keys>
-                      <Keys>D2</Keys>
-                    </Keys>
-                  </KeyboardMacro>
-                </EventActionKeyboard>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_16">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_13">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_14">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -412,8 +361,58 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#9&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
       <Events>
+        <Event BoundTo="Y_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION1" Value="True" />
+                    <Option Key="MAX" Value="1023" />
+                    <Option Key="IDLE" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="X_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION2" Value="True" />
+                    <Option Key="MAX" Value="1023" />
+                    <Option Key="IDLE" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_15">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:FLAPS_INCR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_16">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:FLAPS_DECR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="BUTTON_22">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
@@ -477,35 +476,75 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_43">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL VALVE:1" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG FUEL VALVE:1" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_42">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL VALVE:1" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG FUEL VALVE:1" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_29">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AUTO_THROTTLE_TO_GA" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="RZ_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_PROPPITCH">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION1" Value="True" />
+                    <Option Key="MIN" Value="0" />
+                    <Option Key="MAX" Value="1023" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="RY_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_PROPPITCH">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION2" Value="True" />
+                    <Option Key="MIN" Value="0" />
+                    <Option Key="MAX" Value="1023" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="RX_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_MIXTURE">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION1" Value="True" />
+                    <Option Key="MIN" Value="0" />
+                    <Option Key="MAX" Value="1023" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Z_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_MIXTURE">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="OPTION2" Value="True" />
+                    <Option Key="MIN" Value="0" />
+                    <Option Key="MAX" Value="1023" />
+                  </Options>
+                </EventActionRangedAxis>
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -530,7 +569,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG" IsFinal="true">
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="179.918446514786" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -620,30 +659,6 @@
               </EventConditions>
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_38">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_39">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1285,217 +1300,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="X_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION1" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="RZ_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION2" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="RY_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION3" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="RX_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_NOREVERSE_THROTTLE">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="OPTION4" Value="True" />
-                    <Option Key="IDLE" Value="0" />
-                    <Option Key="MAX" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="Z_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_FLAPS">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="MIN" Value="1023" />
-                    <Option Key="MAX" Value="0" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="Y_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_SPOILER">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="MAX" Value="0" />
-                    <Option Key="IDLE" Value="873" />
-                    <Option Key="MIN" Value="1023" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_16">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_15">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_9">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE1_SET" Value="4294963200" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE1_CUT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_10">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE2_SET" Value="4294963200" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE2_CUT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_11">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE3_SET" Value="4294963200" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE3_CUT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_12">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE4_SET" Value="4294963200" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:THROTTLE4_CUT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_26">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="6" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_25">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="5" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_27">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="7" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_28">
-          <EventDefinitions>
-            <EventDefinition Trigger="RELEASE">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FUELSYSTEM_VALVE_TOGGLE" Value="8" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_31">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
@@ -1514,9 +1318,61 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="BUTTON_34">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_39">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_LEFT_PUMP_SWITCH" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_RIGHT_PUMP_SWITCH" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_38">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_LEFT_PUMP_SWITCH" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_RIGHT_PUMP_SWITCH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_42">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_1" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_2" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_43">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_1" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_2" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
       </Events>
     </Device>
-    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#9&amp;3297f236&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#8&amp;2a6e9373&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -1550,7 +1406,7 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;f949ad7&amp;1&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;10604874&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
           <EventDefinitions>
@@ -2099,6 +1955,26 @@
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
           </Options>
         </Event>
+        <Event BoundTo="CONFIGURE_PANEL_STATUS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
+              </EventConditions>
+              <EventActions>
+                <EventActionCommand CommandName="SPAD_neXt.Device_PowerON" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="VALUE">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AVIONICS MASTER SWITCH" />
+              </EventConditions>
+              <EventActions>
+                <EventActionCommand CommandName="SPAD_neXt.Device_PowerOFF" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_ADF">
           <EventDefinitions>
             <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
@@ -2156,22 +2032,52 @@
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
           </Options>
         </Event>
-        <Event BoundTo="CONFIGURE_PANEL_STATUS">
+      </Events>
+    </Device>
+    <Device VendorID="0x1234" ProductID="0xBEAD" DevicePath="\\?\hid#hidclass#1&amp;2d595ca7&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="2_1_9" DeviceIndex="0" Version="1">
+      <Events>
+        <Event BoundTo="X_AXIS">
           <EventDefinitions>
             <EventDefinition Trigger="VALUE">
-              <EventConditions>
-                <EventCondition ConditionComparator="Greater" ConditionTargetValue="3" ConditionValueSource="SIMCONNECT:ELECTRICAL BATTERY BUS AMPS" />
-              </EventConditions>
               <EventActions>
-                <EventActionCommand CommandName="SPAD_neXt.Device_PowerON" />
+                <EventActionRangedAxis ConfigID="LEVER_BRAKELEFT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
               </EventActions>
             </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Z_AXIS">
+          <EventDefinitions>
             <EventDefinition Trigger="VALUE">
-              <EventConditions>
-                <EventCondition ConditionComparator="Less" ConditionTargetValue="3" ConditionValueSource="SIMCONNECT:ELECTRICAL BATTERY BUS AMPS" />
-              </EventConditions>
               <EventActions>
-                <EventActionCommand CommandName="SPAD_neXt.Device_PowerOFF" />
+                <EventActionRangedAxis ConfigID="LEVER_RUDDER">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="IDLE" Value="16383" />
+                    <Option Key="MIN" Value="32766" />
+                    <Option Key="MAX" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Y_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKERIGHT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2204,8 +2110,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="4ef74182-b08d-4398-a632-b2ec5e0eaed7" Version="0.17">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.8">
     <Description />
-    <LastChanged>2022-01-21T16:15:01.578965-05:00</LastChanged>
+    <LastChanged>2022-03-30T17:56:44.0942171-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
