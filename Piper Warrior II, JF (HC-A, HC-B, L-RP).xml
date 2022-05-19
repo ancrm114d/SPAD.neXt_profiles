@@ -139,7 +139,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_bcn_light" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -148,7 +148,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_bcn_light" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -157,7 +157,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ldg_light" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -166,7 +166,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ldg_light" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -201,7 +201,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_anticol_light" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -210,7 +210,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_anticol_light" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -346,7 +346,7 @@
         <Option Key="BUTTON_5.InputModifier" Value="Repeat" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;10604874&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;2319f919&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_NAV2">
           <EventDefinitions>
@@ -1860,7 +1860,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_fuelpump" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1869,53 +1869,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_44">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:LIGHTING_CABIN_0" Value="50" ValueOperation="Set">
-                  <Options>
-                    <Option Key="HASMINMAX" Value="False" />
-                    <Option Key="VALUEMAX" Value="100" />
-                  </Options>
-                </EventActionChangeValue>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="2" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="10" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_45">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_27" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:LIGHTING_CABIN_0" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_28" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:LIGHTING_CABIN_0" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_fuelpump" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2041,9 +1995,9 @@
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_NAV" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_nav" Value="1" ValueOperation="Set" />
                 <EventActionDelay Delay="200" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_NAV" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_nav" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2052,15 +2006,15 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESSLONG">
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="2.57763886165706" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="107.715801928448" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_HDG_HOLD" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_HDG" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_hdg" Value="1" ValueOperation="Set" />
                 <EventActionDelay Delay="200" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_HDG" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_hdg" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2070,9 +2024,9 @@
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_APR" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_apr" Value="1" ValueOperation="Set" />
                 <EventActionDelay Delay="200" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_APR" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_apr" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2082,9 +2036,9 @@
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_BC_HOLD" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_REV" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_rev" Value="1" ValueOperation="Set" />
                 <EventActionDelay Delay="200" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_REV" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_rev" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2097,9 +2051,9 @@
               </EventConditions>
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_MASTER" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ONOFF" Value="2" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_onoff" Value="2" ValueOperation="Set" />
                 <EventActionDelay Delay="200" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ONOFF" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_onoff" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -2108,19 +2062,19 @@
               </EventConditions>
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:AP_MASTER" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ONOFF" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_onoff" Value="0" ValueOperation="Set" />
                 <EventActionDelay Delay="200" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ONOFF" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_onoff" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG" IsFinal="true">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_TEST" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_test" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="RELEASE" IsFinal="true">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_TEST" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_test" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2139,6 +2093,44 @@
             <EventDefinition Trigger="PRESS">
               <EventActions>
                 <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_FUEL_SEL" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_44">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="2" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="10" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_45">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_27" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_28" />
+              </EventConditions>
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2299,9 +2291,9 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="2ec07d45-6ba0-4d06-87fb-be2481fd13d3" Version="0.27">
+  <ProfileInformation ProfileID="2ec07d45-6ba0-4d06-87fb-be2481fd13d3" Version="0.28">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-03-31T13:28:08.4807189-04:00</LastChanged>
+    <LastChanged>2022-04-16T11:35:53.948954-04:00</LastChanged>
   </ProfileInformation>
 </Profile>

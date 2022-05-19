@@ -1,7 +1,7 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Profile xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://www.fsgs.com/SPAD">
   <Devices>
-    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#b&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1900" DevicePath="\\?\hid#vid_294b&amp;pid_1900#9&amp;2138dd7e&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="6D323C1620233B00" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="X_AXIS">
           <EventDefinitions>
@@ -181,7 +181,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_bcn_light" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -190,7 +190,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_bcn_light" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -199,7 +199,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ldg_light" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -208,7 +208,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ldg_light" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -243,7 +243,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_anticol_light" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -252,7 +252,7 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_anticol_light" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -349,7 +349,7 @@
         <Option Key="POV_EAST.InputModifier" Value="Toggle" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#b&amp;1ac07966&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;10604874&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_NAV2">
           <EventDefinitions>
@@ -991,7 +991,7 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#b&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
+    <Device VendorID="0x294B" ProductID="0x1901" DevicePath="\\?\hid#vid_294b&amp;pid_1901#9&amp;1d5e470f&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="E6012E0C1C1D3B00" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="Y_AXIS">
           <EventDefinitions>
@@ -1785,23 +1785,23 @@
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:AUTOPILOT_hdg" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:AUTOPILOT_HDG" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_hdg" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_HDG" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LVAR:AUTOPILOT_hdg" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LVAR:AUTOPILOT_HDG" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_hdg" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_HDG" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG">
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="278.728585513499" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2181,6 +2181,56 @@
         </Event>
       </Events>
     </Device>
+    <Device VendorID="0x1234" ProductID="0xBEAD" DevicePath="\\?\hid#hidclass#1&amp;2d595ca7&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="2_1_9" DeviceIndex="0" Version="1">
+      <Events>
+        <Event BoundTo="X_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKELEFT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Z_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_RUDDER">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="IDLE" Value="16383" />
+                    <Option Key="MIN" Value="32766" />
+                    <Option Key="MAX" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Y_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKERIGHT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+      </Events>
+    </Device>
   </Devices>
   <Options>
     <Option Key="Elgato.Streamdeck.Brightness" Value="100" ValueType="System.Integer" />
@@ -2207,9 +2257,9 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="3154201e-14c0-415a-bf60-52aef4ce7354" Version="0.25">
+  <ProfileInformation ProfileID="3154201e-14c0-415a-bf60-52aef4ce7354" Version="0.26">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2021-11-23T12:30:58.407684-05:00</LastChanged>
+    <LastChanged>2022-04-02T09:05:54.3611549-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
