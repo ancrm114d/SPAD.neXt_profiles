@@ -334,7 +334,7 @@
         <Option Key="BUTTON_5.InputModifier" Value="Repeat" />
       </Options>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;2596831&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;2319f919&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
           <EventDefinitions>
@@ -2118,7 +2118,7 @@
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="156.047148257455" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="189.544938081299" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -3091,6 +3091,56 @@
         </Event>
       </Events>
     </Device>
+    <Device VendorID="0x1234" ProductID="0xBEAD" DevicePath="\\?\hid#hidclass#1&amp;2d595ca7&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="2_1_9" DeviceIndex="0" Version="1">
+      <Events>
+        <Event BoundTo="X_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKELEFT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Z_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_RUDDER">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="IDLE" Value="16383" />
+                    <Option Key="MIN" Value="32766" />
+                    <Option Key="MAX" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Y_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKERIGHT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+      </Events>
+    </Device>
   </Devices>
   <Options>
     <Option Key="Elgato.Streamdeck.Brightness" Value="100" ValueType="System.Integer" />
@@ -3117,8 +3167,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="5128ae17-4b3f-442b-8d0b-5a38ee5b24ca" Version="0.45">
+  <ProfileInformation ProfileID="5128ae17-4b3f-442b-8d0b-5a38ee5b24ca" Version="0.46">
     <Description />
-    <LastChanged>2022-03-22T16:50:23.4208899-04:00</LastChanged>
+    <LastChanged>2022-06-07T07:24:46.3333403-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
