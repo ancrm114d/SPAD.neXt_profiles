@@ -2118,7 +2118,7 @@
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="189.544938081299" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="353.826034732246" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -2466,6 +2466,274 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="BUTTON_3">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FPL_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FPL_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_4">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_BC_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_PROC_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_PROC_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_5">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_ALT_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_CLR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_CLR_LONG" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_CLR" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_CLR_LONG" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_6">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_7">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:FLIGHT_LEVEL_CHANGE" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_2">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESSLONG" IsFinal="true">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GPS_VNAV_BUTTON" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_MENU_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_MENU_PUSH" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_31">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GEAR_UP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_32">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GEAR_DOWN" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_34">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_35">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="BUTTON_14">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -2490,7 +2758,7 @@
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AP_ALT_VAR_DEC100" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:AP_ALT_VAR_DEC1000" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -2787,274 +3055,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_3">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FPL_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FPL_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_4">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_BC_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_PROC_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_PROC_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_5">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_ALT_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_CLR" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_CLR_LONG" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_CLR" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_CLR_LONG" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_6">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_ENT_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_ENT_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_7">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:FLIGHT_LEVEL_CHANGE" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_FMS_UPPER_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_2">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESSLONG" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GPS_VNAV_BUTTON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_20" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_MFD_MENU_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_19" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AS1000_PFD_MENU_PUSH" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_31">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GEAR_UP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_32">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GEAR_DOWN" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_34">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_35">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
       </Events>
     </Device>
     <Device VendorID="0x068E" ProductID="0x00F2" DevicePath="\\?\hid#vid_068e&amp;pid_00f2#8&amp;2a6e9373&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
@@ -3167,8 +3167,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="5128ae17-4b3f-442b-8d0b-5a38ee5b24ca" Version="0.46">
+  <ProfileInformation ProfileID="5128ae17-4b3f-442b-8d0b-5a38ee5b24ca" Version="0.47">
     <Description />
-    <LastChanged>2022-06-07T07:24:46.3333403-04:00</LastChanged>
+    <LastChanged>2022-06-26T17:39:25.5667642-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
