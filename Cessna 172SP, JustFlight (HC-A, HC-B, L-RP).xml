@@ -3003,6 +3003,56 @@
         </Event>
       </Events>
     </Device>
+    <Device VendorID="0x1234" ProductID="0xBEAD" DevicePath="\\?\hid#hidclass#1&amp;2d595ca7&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="2_1_9" DeviceIndex="0" Version="1">
+      <Events>
+        <Event BoundTo="X_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKELEFT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Z_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_RUDDER">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="IDLE" Value="16383" />
+                    <Option Key="MIN" Value="32766" />
+                    <Option Key="MAX" Value="0" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Y_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_BRAKERIGHT">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MIN" Value="16383" />
+                    <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+      </Events>
+    </Device>
   </Devices>
   <Options>
     <Option Key="Elgato.Streamdeck.Brightness" Value="100" ValueType="System.Integer" />
@@ -3029,8 +3079,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.2">
+  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.3">
     <Description />
-    <LastChanged>2022-08-25T11:29:34.7998556-04:00</LastChanged>
+    <LastChanged>2022-08-25T11:40:30.8710698-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
