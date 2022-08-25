@@ -36,112 +36,11 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_20">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_OFF" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDEROFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_17">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_18">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
                 <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_19">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_ON" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_21">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:LIGHT BEACON" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_BEACON_LIGHTS" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_22">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:LIGHT BEACON" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_BEACON_LIGHTS" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_23">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:LIGHT LANDING" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:LANDING_LIGHTS_TOGGLE" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_24">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:LIGHT LANDING" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:LANDING_LIGHTS_TOGGLE" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_25">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:LIGHT TAXI" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_TAXI_LIGHTS" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_26">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:LIGHT TAXI" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_TAXI_LIGHTS" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -283,69 +182,11 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_16">
+        <Event BoundTo="BUTTON_17">
           <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
+            <EventDefinition Trigger="PRESS" IsFinal="true">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_LEFT" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_RIGHT" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="MSFS:BUS CONNECTION ON:6" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_15">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_BUS_TO_BUS_CONNECTION_TOGGLE" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="MSFS:BUS CONNECTION ON:6" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_14">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:1" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:2" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS">
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ELECTRICAL_SWITCH_BATTERY_MASTER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_LEFT" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_RIGHT" />
-              </EventConditions>
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_13">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:1" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:2" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="1" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -469,42 +310,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_36">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_37">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_40">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:ANTI_ICE_ON" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_41">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:ANTI_ICE_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_29">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -598,7 +403,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG" IsFinal="true">
               <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="98.8118412862626" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_SET" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="99.7642591640887" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1359,42 +1164,48 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_39">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_LEFT_PUMP_SWITCH" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_RIGHT_PUMP_SWITCH" Value="1" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_38">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP1" Value="2" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP2" Value="2" ValueOperation="Set" />
                 <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_LEFT_PUMP_SWITCH" Value="0" ValueOperation="Set" />
                 <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_RIGHT_PUMP_SWITCH" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_42">
+        <Event BoundTo="BUTTON_39">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_1" Value="1" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_2" Value="1" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP1" Value="1" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP2" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_LEFT_PUMP_SWITCH" Value="1" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_RIGHT_PUMP_SWITCH" Value="1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_43">
+        <Event BoundTo="BUTTON_36">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_1" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LVAR:FUEL_LEVER_SELECTOR_2" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:STALL_VENT_HEAT" Value="1" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE" Value="72" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_37">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_OFF" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LVAR:STALL_VENT_HEAT" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE" Value="72" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -1435,7 +1246,7 @@
         </Event>
       </Events>
     </Device>
-    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;10604874&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
+    <Device VendorID="0x06A3" ProductID="0x0D05" DevicePath="\\?\hid#vid_06a3&amp;pid_0d05#9&amp;2319f919&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="" DeviceIndex="0" Version="1">
       <Events>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_COM1">
           <EventDefinitions>
@@ -2139,8 +1950,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.13">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.21">
     <Description />
-    <LastChanged>2022-03-31T12:34:56.7495221-04:00</LastChanged>
+    <LastChanged>2022-06-26T20:21:13.8248736-04:00</LastChanged>
   </ProfileInformation>
 </Profile>

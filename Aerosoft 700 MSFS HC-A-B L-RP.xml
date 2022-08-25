@@ -499,57 +499,6 @@
             <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
           </Options>
         </Event>
-        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_XPDR">
-          <EventDefinitions>
-            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Increment" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
-              <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" Value="1" ValueOperation="Decrement" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="LEFTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:KOHLSMAN SETTING MB" TargetDisplay="LEFTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="RIGHTDISPLAY">
-              <EventActions>
-                <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:TRANSPONDER CODE:1" TargetDisplay="RIGHTDISPLAY" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATESHORT">
-              <EventActions>
-                <EventActionCommand CommandName="DIGITMARK" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="ACTIVATELONG">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:BAROMETRIC_STD_PRESSURE" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-          <Options>
-            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
-            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
-            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
-          </Options>
-        </Event>
         <Event BoundTo="RADIOPANEL_UPPER_SELECTOR_ADF">
           <EventDefinitions>
             <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
@@ -596,6 +545,37 @@
             <EventDefinition Trigger="RIGHTDISPLAY">
               <EventActions>
                 <EventActionDisplayValue TargetDataDefinition="SIMCONNECT:NAV DMESPEED:1" TargetDisplay="RIGHTDISPLAY" DisplayFormat="0.0" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+          <Options>
+            <Option Key="TUNER_INNER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_OUTER_SENSITIVITY" Value="100" />
+            <Option Key="TUNER_MULTIPLY_1" Value="1" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_2" Value="2" ValueType="System.Integer" />
+            <Option Key="TUNER_MULTIPLY_3" Value="3" ValueType="System.Integer" />
+          </Options>
+        </Event>
+        <Event BoundTo="RADIOPANEL_LOWER_SELECTOR_XPDR">
+          <EventDefinitions>
+            <EventDefinition Trigger="TUNER_OUTER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ASCRJ_LSP_FORMAT_CHANGE" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_OUTER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ASCRJ_LSP_FORMAT_CHANGE" Value="-1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_CLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ASCRJ_LSP_RANGE_CHANGE" Value="1" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="TUNER_INNER_COUNTERCLOCKWISE">
+              <EventActions>
+                <EventActionChangeValue TargetDataDefinition="LVAR:ASCRJ_LSP_RANGE_CHANGE" Value="-1" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2290,8 +2270,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="2d726dd0-d6e4-4598-a4a2-e6952a947467" Version="0.143">
+  <ProfileInformation ProfileID="2d726dd0-d6e4-4598-a4a2-e6952a947467" Version="0.151">
     <Description />
-    <LastChanged>2022-06-25T15:05:10.8211142-04:00</LastChanged>
+    <LastChanged>2022-07-10T10:05:36.3625227-04:00</LastChanged>
   </ProfileInformation>
 </Profile>

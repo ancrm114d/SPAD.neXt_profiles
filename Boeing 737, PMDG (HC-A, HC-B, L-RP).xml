@@ -1546,7 +1546,7 @@
             </EventDefinition>
             <EventDefinition Trigger="PRESSLONG">
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="217.908922989227" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="259.586008337096" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -1665,22 +1665,6 @@
     </Device>
     <Device VendorID="0x1234" ProductID="0xBEAD" DevicePath="\\?\hid#hidclass#1&amp;2d595ca7&amp;0&amp;0000#{4d1e55b2-f16f-11cf-88cb-001111000030}" Serial="2_1_9" DeviceIndex="0" Version="1">
       <Events>
-        <Event BoundTo="Z_AXIS">
-          <EventDefinitions>
-            <EventDefinition Trigger="VALUE">
-              <EventActions>
-                <EventActionRangedAxis ConfigID="LEVER_RUDDER">
-                  <Options>
-                    <Option Key="USERAWVALUE" Value="True" />
-                    <Option Key="MAX" Value="32766" />
-                    <Option Key="IDLE" Value="16432" />
-                    <Option Key="MIN" Value="0" />
-                  </Options>
-                </EventActionRangedAxis>
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="Y_AXIS">
           <EventDefinitions>
             <EventDefinition Trigger="VALUE">
@@ -1705,6 +1689,23 @@
                     <Option Key="USERAWVALUE" Value="True" />
                     <Option Key="MIN" Value="16383" />
                     <Option Key="MAX" Value="32766" />
+                  </Options>
+                </EventActionRangedAxis>
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="Z_AXIS">
+          <EventDefinitions>
+            <EventDefinition Trigger="VALUE">
+              <EventActions>
+                <EventActionRangedAxis ConfigID="LEVER_RUDDER">
+                  <Options>
+                    <Option Key="USERAWVALUE" Value="True" />
+                    <Option Key="MAX" Value="32766" />
+                    <Option Key="IDLE" Value="16432" />
+                    <Option Key="MIN" Value="0" />
+                    <Option Key="INVERTAXIS" Value="True" />
                   </Options>
                 </EventActionRangedAxis>
               </EventActions>
@@ -1739,8 +1740,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="bcead6cd-0975-4dda-a7c4-45d6ce752b9d" Version="0.2">
+  <ProfileInformation ProfileID="bcead6cd-0975-4dda-a7c4-45d6ce752b9d" Version="0.3">
     <Description />
-    <LastChanged>2022-05-11T17:56:04.461853-04:00</LastChanged>
+    <LastChanged>2022-08-14T14:03:56.189483-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
