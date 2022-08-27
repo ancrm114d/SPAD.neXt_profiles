@@ -564,643 +564,6 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_13">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AP_ALT_VAR_INC100" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AP_ALT_VAR_INC1000" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_VAR_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="2" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="5" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="2" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="5" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_14">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AP_ALT_VAR_DEC100" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AP_ALT_VAR_DEC100" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_VAR_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:AP_SPD_VAR_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="2" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="5" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="2" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="5" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
-                <EventActionDelay Delay="175" />
-                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <Comment />
-              <EventConditions>
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-              </EventConditions>
-              <EventActions>
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-          </EventDefinitions>
-        </Event>
         <Event BoundTo="BUTTON_3">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS">
@@ -1465,6 +828,643 @@
               </EventConditions>
               <EventActions>
                 <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_13">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_INNER_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_OUTER_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_UP" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_UP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="2" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="5" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="2" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" Value="5" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_14">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_INNER_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_OUTER_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_DN" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_DN" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="2" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="5" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="2" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" Value="5" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" ValueOperation="Set" />
+                <EventActionDelay Delay="175" />
+                <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <Comment />
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+              </EventConditions>
+              <EventActions>
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2209,8 +2209,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.5">
+  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.7">
     <Description />
-    <LastChanged>2022-08-27T18:13:20.8264297-04:00</LastChanged>
+    <LastChanged>2022-08-27T18:17:48.355386-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
