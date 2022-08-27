@@ -1201,7 +1201,7 @@
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="245.860262318929" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="249.438487418486" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS">
@@ -1282,6 +1282,15 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
+        <Event BoundTo="BUTTON_8">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_AP" Value="0" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
         <Event BoundTo="BUTTON_7">
           <EventDefinitions>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -1292,13 +1301,12 @@
                 <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_BARO" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-          </EventDefinitions>
-        </Event>
-        <Event BoundTo="BUTTON_8">
-          <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
+            <EventDefinition Trigger="PRESSLONG">
+              <EventConditions>
+                <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+              </EventConditions>
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_AP" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:KAP140_LONG_PUSH_BARO" Value="0" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -2043,8 +2051,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.9">
+  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.10">
     <Description />
-    <LastChanged>2022-08-27T18:38:03.450665-04:00</LastChanged>
+    <LastChanged>2022-08-27T18:41:15.6023788-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
