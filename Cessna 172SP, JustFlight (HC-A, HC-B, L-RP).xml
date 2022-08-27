@@ -274,32 +274,38 @@
             </EventDefinition>
           </EventDefinitions>
         </Event>
-        <Event BoundTo="BUTTON_17">
+        <Event BoundTo="BUTTON_19">
           <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE" Value="40" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_20">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_ON" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE" Value="40" ValueOperation="Set" />
+              </EventActions>
+            </EventDefinition>
+          </EventDefinitions>
+        </Event>
+        <Event BoundTo="BUTTON_17">
+          <EventDefinitions>
+            <EventDefinition Trigger="PRESS">
+              <EventActions>
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE" Value="39" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
         </Event>
         <Event BoundTo="BUTTON_18">
           <EventDefinitions>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
+            <EventDefinition Trigger="PRESS">
               <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_OFF" Value="0" ValueOperation="Set" />
-              </EventActions>
-            </EventDefinition>
-            <EventDefinition Trigger="PRESS" IsFinal="true">
-              <EventActions>
-                <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_2_OFF" Value="0" ValueOperation="Set" />
-                <EventActionControl TargetDataDefinition="MSFS:TRANSPONDEROFF" Value="0" ValueOperation="Set" />
+                <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE" Value="39" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
           </EventDefinitions>
@@ -526,7 +532,7 @@
                 <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
               </EventConditions>
               <EventActions>
-                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="348.152143586309" ValueOperation="Set" />
+                <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" Value="278.686583121216" ValueOperation="Set" />
               </EventActions>
             </EventDefinition>
             <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -3079,8 +3085,8 @@
     <Option Key="Elgato.Streamdeck.FlashBackgroundOnly" Value="True" ValueType="System.Boolean" />
   </Options>
   <CustomClientEvents />
-  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.3">
+  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.4">
     <Description />
-    <LastChanged>2022-08-25T11:40:30.8710698-04:00</LastChanged>
+    <LastChanged>2022-08-27T18:03:07.2682051-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
