@@ -544,18 +544,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_34">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_35">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
@@ -1360,6 +1348,26 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
+          <Event BoundTo="BUTTON_34">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
         </Events>
         <Extensions />
       </DevicePage>
@@ -2117,9 +2125,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.13">
+  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.14">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-09-20T17:39:31.8939112-04:00</LastChanged>
+    <LastChanged>2022-09-22T14:57:45.0197184-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
