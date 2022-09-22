@@ -436,15 +436,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_40">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:ANTI_ICE_ON" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_41">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
@@ -2141,9 +2132,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.16">
+  <ProfileInformation ProfileID="d89c05a3-cb97-4a4d-83b3-d7fd76ab2c56" Version="0.17">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-09-22T15:04:14.2258219-04:00</LastChanged>
+    <LastChanged>2022-09-22T15:04:50.2164691-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
