@@ -37,223 +37,11 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_17">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_OFFON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_VOL_KNOB" Value="10" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_OFFON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_VOL_KNOB" Value="10" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KT76_MODE_KNOB" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_4">
             <EventDefinitions>
               <EventDefinition Trigger="PRESSSHORT">
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:AUTOPILOT_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_13">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_ON" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_14">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_15">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_ON" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_16">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_18">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_OFFON" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_VOL_KNOB" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_OFFON" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_VOL_KNOB" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KT76_MODE_KNOB" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_19">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_OFFON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_VOL_KNOB" Value="10" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_OFFON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_VOL_KNOB" Value="10" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KN62_POWER" Value="1" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_MODE_KNOB" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_VOL_KNOB" Value="10" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_20">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_OFFON" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_VOL_KNOB" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_OFFON" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_VOL_KNOB" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KN62_POWER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_MODE_KNOB" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_VOL_KNOB" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_21">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_22">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_23">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_24">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_27">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_45" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_28">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_45" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_29">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_30">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="0" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -359,6 +147,186 @@
                       </Keys>
                     </KeyboardMacro>
                   </EventActionKeyboard>
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_13">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_ON" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:ALTERNATOR_OFF" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_15">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_ON" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:MASTER_BATTERY_OFF" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_17">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_OFFON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_VOL_KNOB" Value="10" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_OFFON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_VOL_KNOB" Value="10" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KT76_MODE_KNOB" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_OFFON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_COMM1_VOL_KNOB" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_OFFON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX170_NAV1_VOL_KNOB" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KT76_MODE_KNOB" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_19">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_OFFON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_VOL_KNOB" Value="10" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_OFFON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_VOL_KNOB" Value="10" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KN62_POWER" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_MODE_KNOB" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_VOL_KNOB" Value="10" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_OFFON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_COMM2_VOL_KNOB" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_OFFON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KX175_NAV2_VOL_KNOB" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KN62_POWER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_MODE_KNOB" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:KR85_VOL_KNOB" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_21">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_BCN_LIGHT" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_23">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_LDG_LIGHT" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_29">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_ANTICOL_LIGHT" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_27">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_44" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_44" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="0" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -1276,18 +1244,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_34">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_35">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
@@ -1296,15 +1252,6 @@
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_36">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -1318,38 +1265,11 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_40">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:RIGHT_LOWER_FAN" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_41">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:RIGHT_LOWER_FAN" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_44">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:LIGHTING_CABIN_0" Value="50">
-                    <Options>
-                      <Option Key="HASMINMAX" Value="False" />
-                      <Option Key="VALUEMAX" Value="100" />
-                    </Options>
-                  </EventActionChangeValue>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="2" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="1" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="10" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -1391,24 +1311,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_42">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_FUEL_SEL" Value="2" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_38">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_39">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
@@ -1425,7 +1327,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_MODE" Value="1" ValueOperation="Increment">
@@ -1444,7 +1346,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_MODE" Value="1" ValueOperation="Increment">
@@ -1460,7 +1362,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ROLL" Value="1" ValueOperation="Increment">
@@ -1479,7 +1381,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ROLL" Value="5" ValueOperation="Increment">
@@ -1495,7 +1397,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
@@ -1509,7 +1411,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
@@ -1529,7 +1431,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
@@ -1543,7 +1445,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
@@ -1563,7 +1465,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
@@ -1577,7 +1479,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
@@ -1688,7 +1590,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
@@ -1776,7 +1678,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_MODE" Value="1" ValueOperation="Decrement">
@@ -1795,7 +1697,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_MODE" Value="1" ValueOperation="Decrement">
@@ -1811,7 +1713,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ROLL" Value="1" ValueOperation="Decrement">
@@ -1830,7 +1732,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="LVAR:AUTOPILOT_ROLL" Value="5" ValueOperation="Decrement">
@@ -1846,7 +1748,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
@@ -1860,7 +1762,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
@@ -1880,7 +1782,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
@@ -1894,7 +1796,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
@@ -1914,7 +1816,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
@@ -1928,7 +1830,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
@@ -2039,7 +1941,7 @@
                 <EventConditions>
                   <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
                   <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
                 </EventConditions>
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
@@ -2118,6 +2020,138 @@
                       <Option Key="VALUEMAX" Value="95" />
                     </Options>
                   </EventActionChangeValue>
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_34">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_36">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_OFF" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_38">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_FUELPUMP" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_40">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:RIGHT_LOWER_FAN" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:RIGHT_LOWER_FAN" Value="1" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_42">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_FUEL_SEL" Value="2" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LEFT_MISC_FUEL_SEL" Value="1" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_31">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS" IgnorePowerState="true">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LDG_GEAR_LEVER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE" IgnorePowerState="true">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LDG_GEAR_LEVER" Value="1" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+            <Options>
+              <Option Key="NAME" Value="NO NAME" />
+            </Options>
+          </Event>
+          <Event BoundTo="BUTTON_44">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LIGHTING_CABIN_0" Value="50">
+                    <Options>
+                      <Option Key="HASMINMAX" Value="False" />
+                      <Option Key="VALUEMAX" Value="100" />
+                    </Options>
+                  </EventActionChangeValue>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="2" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="10" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LIGHTING_CABIN_0" Value="0">
+                    <Options>
+                      <Option Key="HASMINMAX" Value="False" />
+                      <Option Key="VALUEMAX" Value="100" />
+                    </Options>
+                  </EventActionChangeValue>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT_ON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_PANEL_LIGHT" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1900_BUTTON_27" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT_ON" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:CENTRE_LOWER_NAV_LIGHT" Value="0" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -2294,9 +2328,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="3154201e-14c0-415a-bf60-52aef4ce7354" Version="0.28">
+  <ProfileInformation ProfileID="3154201e-14c0-415a-bf60-52aef4ce7354" Version="0.32">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-09-29T19:01:47.9755652-04:00</LastChanged>
+    <LastChanged>2022-10-02T11:07:00.3439585-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
