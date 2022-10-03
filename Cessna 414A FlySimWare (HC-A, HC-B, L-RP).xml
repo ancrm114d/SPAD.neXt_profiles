@@ -618,22 +618,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_38">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP1">
-                    <Parameter Value="2" />
-                  </EventActionControl>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP2">
-                    <Parameter Value="2" />
-                  </EventActionControl>
-                  <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_LEFT_PUMP_SWITCH" Value="0" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_MOMENTARY_AUX_RIGHT_PUMP_SWITCH" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_39">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
@@ -2085,9 +2069,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.29">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.30">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-10-03T10:29:59.2886347-04:00</LastChanged>
+    <LastChanged>2022-10-03T10:32:33.4130719-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
