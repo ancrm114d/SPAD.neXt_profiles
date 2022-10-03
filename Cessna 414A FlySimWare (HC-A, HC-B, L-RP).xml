@@ -284,6 +284,20 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
+          <Event BoundTo="BUTTON_25">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:LIGHT TAXI" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:LIGHT TAXI" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
         </Events>
         <Extensions />
       </DevicePage>
@@ -2088,9 +2102,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.25">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.26">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-10-03T09:30:29.875479-04:00</LastChanged>
+    <LastChanged>2022-10-03T09:32:53.4395608-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
