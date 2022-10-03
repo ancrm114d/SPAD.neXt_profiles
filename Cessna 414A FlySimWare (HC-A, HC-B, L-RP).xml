@@ -37,15 +37,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_18">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS" IsFinal="true">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_27">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -197,11 +188,64 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_17">
+          <Event BoundTo="BUTTON_13">
             <EventDefinitions>
-              <EventDefinition Trigger="PRESS" IsFinal="true">
+              <EventDefinition Trigger="PRESS">
                 <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="1" />
+                  <EventActionDelay Delay="100" />
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:1" SourceDataDefinition="LVAR:ALTERNATOR_LEFT" />
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:2" SourceDataDefinition="LVAR:ALTERNATOR_RIGHT" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_LEFT" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:ALTERNATOR_RIGHT" Value="0" />
+                  <EventActionDelay Delay="100" />
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:1" SourceDataDefinition="LVAR:ALTERNATOR_LEFT" />
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="SIMCONNECT:GENERAL ENG MASTER ALTERNATOR:2" SourceDataDefinition="LVAR:ALTERNATOR_RIGHT" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_LEFT" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_RIGHT" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ELECTRICAL_Switch_Battery_Master" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_15">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="1" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_Switch_Battery_Master" Value="1" />
+                  <EventActionDelay Delay="100" />
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="MSFS:BUS CONNECTION ON:6" SourceDataDefinition="LVAR:ELECTRICAL_Switch_Battery_Master" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:ELECTRICAL_Switch_Battery_Master" Value="0" />
+                  <EventActionDelay Delay="100" />
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="MSFS:BUS CONNECTION ON:6" SourceDataDefinition="LVAR:ELECTRICAL_Switch_Battery_Master" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_LEFT" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ALTERNATOR_RIGHT" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LVAR:ELECTRICAL_Switch_Battery_Master" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:MASTER_BAR" Value="0" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -2010,9 +2054,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.22">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.24">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-10-03T09:05:26.3551322-04:00</LastChanged>
+    <LastChanged>2022-10-03T09:19:48.3285584-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
