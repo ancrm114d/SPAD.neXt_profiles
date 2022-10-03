@@ -250,6 +250,40 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
+          <Event BoundTo="BUTTON_17">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_ON" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:AVIONICS_MASTER_1_OFF" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_23">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_Momentary_LIGHT_SWITCH_LANDING_1" Value="2" />
+                  <EventActionDelay Delay="100" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LANDING_LIGHT_MOTOR" Value="100" />
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:LIGHT LANDING" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="LVAR:GENERIC_Momentary_LIGHT_SWITCH_LANDING_1" Value="0" />
+                  <EventActionDelay Delay="100" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:LANDING_LIGHT_MOTOR" Value="0" />
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:LIGHT LANDING" Value="0" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
         </Events>
         <Extensions />
       </DevicePage>
@@ -2054,9 +2088,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.24">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.25">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-10-03T09:19:48.3285584-04:00</LastChanged>
+    <LastChanged>2022-10-03T09:30:29.875479-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
