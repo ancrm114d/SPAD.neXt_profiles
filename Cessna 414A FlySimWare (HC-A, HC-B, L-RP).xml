@@ -650,19 +650,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_36">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" />
-                  <EventActionChangeValue TargetDataDefinition="LVAR:STALL_VENT_HEAT" Value="1" />
-                  <EventActionControl TargetDataDefinition="MSFS:ELECTRICAL_CIRCUIT_TOGGLE">
-                    <Parameter Value="72" />
-                  </EventActionControl>
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_37">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
@@ -1321,6 +1308,22 @@
                   <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
                   <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
                   <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_36">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:STALL_VENT_HEAT" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_OFF" />
+                  <EventActionChangeValue TargetDataDefinition="LVAR:STALL_VENT_HEAT" Value="0" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -2082,9 +2085,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.27">
+  <ProfileInformation ProfileID="e8015c40-a855-4f17-bbe6-b785dfbcdbdc" Version="0.29">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-10-03T10:03:02.5664578-04:00</LastChanged>
+    <LastChanged>2022-10-03T10:29:59.2886347-04:00</LastChanged>
   </ProfileInformation>
 </Profile>
