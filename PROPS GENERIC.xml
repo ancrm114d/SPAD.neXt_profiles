@@ -446,29 +446,11 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_36">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_37">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS">
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_OFF" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_40">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:ANTI_ICE_ON" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -490,18 +472,6 @@
                 </EventConditions>
                 <EventActions>
                   <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG FUEL VALVE:1" Value="0" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_42">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS" IsFinal="true">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL VALVE:1" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG FUEL VALVE:1" Value="1" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -695,18 +665,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_38">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS" IsFinal="true">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_39">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS" IsFinal="true">
@@ -729,18 +687,6 @@
               <EventDefinition Trigger="RELEASE">
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:GEAR_DOWN" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_34">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESS">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -1390,6 +1336,94 @@
                   <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
                   <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
                   <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_34">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:BRAKE PARKING INDICATOR" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PARKING_BRAKES" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_36">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_ON" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:PITOT_HEAT_OFF" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_38">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS" IsFinal="true">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE" IsFinal="true">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL PUMP ON:1" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_ELECT_FUEL_PUMP" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_40">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:ANTI_ICE_ON" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:ANTI_ICE_OFF" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_42">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESS" IsFinal="true">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL VALVE:1" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG FUEL VALVE:1" Value="1" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="RELEASE" IsFinal="true">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="`" ConditionValueSource="SIMCONNECT:GENERAL ENG FUEL VALVE:1" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:GENERAL ENG FUEL VALVE:1" Value="0" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -2151,9 +2185,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="aa29eabd-9eb6-44a4-8693-25bb5efd823a" Version="0.34">
+  <ProfileInformation ProfileID="aa29eabd-9eb6-44a4-8693-25bb5efd823a" Version="0.35">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2022-09-20T17:39:29.790606-04:00</LastChanged>
+    <LastChanged>2022-11-11T17:25:22.1775248-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
