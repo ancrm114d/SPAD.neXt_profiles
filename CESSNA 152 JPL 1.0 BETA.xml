@@ -1397,655 +1397,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="E_AP_ENCODER">
-            <EventDefinitions>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_INNER_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_OUTER_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_UP" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_UP" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
-                    <Parameter Value="2" />
-                  </EventActionControl>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
-                    <Parameter Value="5" />
-                  </EventActionControl>
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
-                    <Parameter Value="2" />
-                  </EventActionControl>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
-                    <Parameter Value="5" />
-                  </EventActionControl>
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_INNER_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_OUTER_DEC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_DN" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_DN" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
-                    <Parameter Value="2" />
-                  </EventActionControl>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
-                    <Parameter Value="5" />
-                  </EventActionControl>
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
-                    <Parameter Value="2" />
-                  </EventActionControl>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
-                    <Parameter Value="5" />
-                  </EventActionControl>
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_47" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
-                  <EventActionDelay Delay="175" />
-                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
-                <Comment />
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_34">
             <EventDefinitions>
               <EventDefinition Trigger="PRESS" InputBehavior="Pulse">
@@ -2130,6 +1481,655 @@
                   <EventActionControl TargetDataDefinition="SIMCONNECT:PANEL_LIGHTS_OFF">
                     <Parameter Value="1" />
                   </EventActionControl>
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="E_AP_ENCODER">
+            <EventDefinitions>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_INNER_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_OUTER_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_UP" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_UP" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
+                    <Parameter Value="2" />
+                  </EventActionControl>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
+                    <Parameter Value="5" />
+                  </EventActionControl>
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
+                    <Parameter Value="2" />
+                  </EventActionControl>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_INC">
+                    <Parameter Value="5" />
+                  </EventActionControl>
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_UP" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_CLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_INC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_INNER_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_KNOB_OUTER_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_DN" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_PUSH_DN" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:HEADING_BUG_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
+                    <Parameter Value="2" />
+                  </EventActionControl>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
+                    <Parameter Value="5" />
+                  </EventActionControl>
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_21" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
+                    <Parameter Value="2" />
+                  </EventActionControl>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:KOHLSMAN_DEC">
+                    <Parameter Value="5" />
+                  </EventActionControl>
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_20" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:ATTITUDE_BARS_POSITION_DOWN" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_19" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:GYRO_DRIFT_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR1_OBI_INC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_18" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:VOR2_OBI_DEC" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Unequal" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="1" />
+                  <EventActionDelay Delay="175" />
+                  <EventActionChangeValue TargetDataDefinition="LOCAL:LCL_ACE_TIMER" Value="0" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="TUNER_COUNTERCLOCKWISE" IsFinal="true">
+                <Comment />
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:LCL_ACE_TIMER" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_17" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="LOCAL:JOY_0X294B0X1901_BUTTON_46" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TRUE_AIRSPEED_CAL_DEC" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -2346,9 +2346,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.62">
+  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.63">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2023-02-21T18:14:18.7879545-05:00</LastChanged>
+    <LastChanged>2023-02-22T10:37:21.5413884-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
