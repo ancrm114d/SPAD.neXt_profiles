@@ -2105,24 +2105,6 @@
                   <EventActionControl TargetDataDefinition="MSFS:KAP140_Push_ALT" />
                 </EventActions>
               </EventDefinition>
-              <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" />
-                </EventActions>
-              </EventDefinition>
             </EventDefinitions>
           </Event>
         </Events>
@@ -2337,9 +2319,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.64">
+  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.66">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2023-02-22T10:47:41.3203556-05:00</LastChanged>
+    <LastChanged>2023-02-22T11:30:11.829157-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
