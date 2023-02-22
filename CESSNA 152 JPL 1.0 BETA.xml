@@ -1161,24 +1161,6 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
-          <Event BoundTo="BUTTON_4">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESSSHORT">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:AP_BC_HOLD" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_6">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESSSHORT">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:AP_VS_HOLD" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
           <Event BoundTo="BUTTON_8">
             <EventDefinitions>
               <EventDefinition Trigger="PRESSSHORT">
@@ -1235,58 +1217,6 @@
               <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
                 <EventActions>
                   <EventActionControl TargetDataDefinition="SIMCONNECT:AUTO_THROTTLE_TO_GA" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_1">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK" Value="0" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESSLONG">
-                <EventActions>
-                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK" Value="1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_5">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESSSHORT">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:AP_ALT_HOLD" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
-                <EventConditions>
-                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
-                </EventConditions>
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -1351,29 +1281,6 @@
                       <Option Key="MAX" Value="1023" />
                     </Options>
                   </EventActionRangedAxis>
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_2">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" />
-                </EventActions>
-              </EventDefinition>
-              <EventDefinition Trigger="PRESSLONG" IsFinal="true">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_GPS_DRIVES_NAV1" />
-                </EventActions>
-              </EventDefinition>
-            </EventDefinitions>
-          </Event>
-          <Event BoundTo="BUTTON_3">
-            <EventDefinitions>
-              <EventDefinition Trigger="PRESSSHORT">
-                <EventActions>
-                  <EventActionControl TargetDataDefinition="SIMCONNECT:AP_APR_HOLD" />
                 </EventActions>
               </EventDefinition>
             </EventDefinitions>
@@ -2134,6 +2041,90 @@
               </EventDefinition>
             </EventDefinitions>
           </Event>
+          <Event BoundTo="BUTTON_1">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_Push_HDG" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESSLONG">
+                <EventActions>
+                  <EventActionChangeValue SourceType="Data" TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK DIR" SourceDataDefinition="SIMCONNECT:HEADING INDICATOR,DEGREES" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="0" ConditionValueSource="SIMCONNECT:AUTOPILOT HEADING LOCK" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionChangeValue TargetDataDefinition="SIMCONNECT:AUTOPILOT HEADING LOCK" Value="1" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_2">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESSSHORT" IsFinal="true">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:AP_NAV1_HOLD" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESSLONG" IsFinal="true">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="SIMCONNECT:TOGGLE_GPS_DRIVES_NAV1" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_3">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESSSHORT">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_Push_APR" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_4">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESSSHORT">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_Push_REV" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
+          <Event BoundTo="BUTTON_5">
+            <EventDefinitions>
+              <EventDefinition Trigger="PRESSSHORT">
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:KAP140_Push_ALT" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="1" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="2" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="3" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERALT" />
+                </EventActions>
+              </EventDefinition>
+              <EventDefinition Trigger="PRESSLONG" IsFinal="true" ConditionBinding="OR">
+                <EventConditions>
+                  <EventCondition ConditionComparator="Equals" ConditionTargetValue="4" ConditionValueSource="MSFS:TRANSPONDER STATE:1" />
+                </EventConditions>
+                <EventActions>
+                  <EventActionControl TargetDataDefinition="MSFS:TRANSPONDERSTBY" />
+                </EventActions>
+              </EventDefinition>
+            </EventDefinitions>
+          </Event>
         </Events>
         <Extensions />
       </DevicePage>
@@ -2346,9 +2337,9 @@
     <Option Key="Elgato.Streamdeck.HeldThreshold" Value="500" />
     <Option Key="Elgato.Streamdeck.HeldFrequency" Value="1" />
   </Options>
-  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.63">
+  <ProfileInformation ProfileID="8f50c56f-36e2-4e48-ad19-e3d310f2510d" Version="0.64">
     <Author>ANCRM114</Author>
     <Description />
-    <LastChanged>2023-02-22T10:37:21.5413884-05:00</LastChanged>
+    <LastChanged>2023-02-22T10:47:41.3203556-05:00</LastChanged>
   </ProfileInformation>
 </Profile>
